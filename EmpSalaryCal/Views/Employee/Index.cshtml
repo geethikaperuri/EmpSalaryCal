@@ -1,0 +1,29 @@
+﻿@model EmpSalaryCal.Models.Dependent
+
+@{
+    ViewData["Title"] = "Index";
+}
+<br />
+<h3> Paylocity - Employee Deductions Calculator </h3>
+<br />
+
+<h4>Dependent Details</h4>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Index">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NumberOfDependent" class="control-label"></label>
+                <input asp-for="NumberOfDependent" class="form-control" />
+                <span asp-validation-for="NumberOfDependent" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Proceed" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
